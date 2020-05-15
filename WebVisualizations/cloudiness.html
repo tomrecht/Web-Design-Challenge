@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Cloudiness</title>
+</head>
+<body style="background-color:lightgrey">
+
+<nav class="navbar navbar-inverse" style="background-color:white">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html" style="background-color:darkcyan; color:white; font-family:cambria; font-weight:bold">Latitude</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown-toggle" data-toggle="dropdown">Plots</li>
+        <ul class="dropdown-menu">
+          <li><a href="maxtemp.html">Max Temperature</a></li>
+          <li><a href="humidity.html">Humidity</a></li>
+          <li><a href="cloudiness.html">Cloudiness</a></li>
+          <li><a href="windspeed.html">Wind speed</a></li>
+        </ul>
+      
+      <li><a href="comparison.html">Comparison</a></li>
+      <li><a href="data.html">Data</a></li>
+    </ul>
+  </div>
+</nav>
+
+  <div class="row" style="margin:20px">
+    <div class="col-md-8 col-12">
+    <div class="card"> 
+        <h2 class="card-title">Cloudiness</h2>
+        <hr>
+        <div class="row" style="margin:20px">
+        <p><img src="assets/Fig3.png" style="float:left; width:30%">
+
+No real correlation was found between cloudiness and latitude.    
+        </div>
+    </div>
+    </div>
+    <div class="col-md-4 col-12">
+    <div class="card"> 
+        <h2 class="card-title">Visualizations</h2>
+        <hr>
+          <div class="row">
+            <div class="col">        <img src="assets/Fig1.png" width=100%>
+        <img src="assets/Fig2.png" width=100%></div>
+
+                    <div class="col">  <img style="border:3px solid darkcyan" src="assets/Fig3.png" width=100%>
+        <img src="assets/Fig4.png" width=100%></div>
+          </div>
+    </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+<script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+</body>
+</html>
